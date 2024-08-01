@@ -1,0 +1,316 @@
+body{
+    font-family: 'century gothic', calibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(47, 144, 177);
+}
+
+header img{
+    width: 15%;
+    display: inline-block;
+    box-shadow: 0px 0px 10px rgb(8, 4, 55);
+    border-radius: 35px;
+}
+header h1{
+    width: 80%;
+    display: inline-block;
+    margin-left: 0px;
+    float: right;
+}
+#head{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 35px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+}
+h2{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+h3{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 70px;
+    text-transform: uppercase;
+}
+
+header{
+    height: 100px;
+
+}
+
+footer{
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #5e5555;
+    border-top: 2px solid #AAA;
+}
+
+nav{
+    width: 100%;
+    background-color: #171821;
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    list-style-type: none;
+    float: left;
+    border-radius: 10px;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.table{
+    display: table;
+    margin: 0 auto;
+}
+
+.MA:hover{
+    border-top: 5px solid #4c8;
+    background-color: RGBa(70, 230, 130, 0.15);
+}
+.MP:hover{
+    border-top: 5px solid #f1dd4e;
+    background-color: RGBa(240, 210, 79, 0.15);
+
+}
+
+.MR:hover{
+    border-top: 5px solid #0070cc;
+    background-color: RGBa(000, 112, 190, 0.15);
+}
+
+.MG:hover{
+    border-top: 5px solid #e55d24;
+    background-color: RGBa(225, 75, 40, 0.15);
+}
+
+nav li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+.Galerie{
+    margin: 0px;
+    padding: 0px;
+}
+
+.galerie{
+    text-align: center;
+    margin: 20px 20px;
+    padding: 0px;
+    box-shadow: 0px 0px 20px #041625;
+}
+
+.galerie:hover{
+    box-shadow: 0px 0px 40px #130752;
+    width: 98%;
+}
+.galerie a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0070cc;
+    padding: 5px 5px;
+    margin: 2px 5px;
+    text-transform: uppercase;
+    font-size: 30px;
+    border: 1px solid  black;
+    border-radius: 30px;
+}
+
+.G{
+    margin: 30px 30px 30px 30px;
+    padding: 0px;
+    position: relative;
+}
+
+.G img{
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 3px 25px;
+    width: 45%;
+    height: 300px;
+    display: inline-block;
+    box-shadow: 0px 0px 30px #041625;
+}
+.G img:hover{
+    box-shadow:0px 0px 70px #01182a ;
+    width: 46%;
+    height: 300px;
+}
+
+.H{
+    border: 1px solid white;
+    background-color: #130752;
+    border-radius: 20px;
+    margin: 5px 90px ;
+    width: 30%;
+    height: 350px;
+    text-align: center;
+    display: inline-block;
+}
+
+.H img{
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 3px 60px;
+    width: 70%;
+    height: 200px;
+    display: inline-block;
+}
+.H img:hover{
+    box-shadow:none;
+    width:70%;
+    height: 200px;
+}
+
+.H a{
+    border: 2px inset rgb(6, 1, 24);
+    text-align: center;
+    background-color: rgb(31, 106, 147);
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(195, 188, 211);
+}
+.H a:hover{
+    color: #01182a;
+    font-size: ;
+}
+
+.galeries{
+    border: 1px outset white;
+    border-radius: 20px;
+    background-color: rgb(32, 18, 98);
+}
+
+#sect1{
+    background-color: RGBa(70, 42, 210, 0.15);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+#sect2{
+    background-color:rgba(70, 42, 210, 0.15);
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+#sect1:hover, #sect2:hover{
+    box-shadow: 0px 0px 5px #041625;
+}
+
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #444;
+}
+
+#sect1 input{
+    width: 300px;
+    height: 20px;
+}
+
+#sect2 input{
+    width: 300px;
+    height: 20px;
+}
+
+#sect1 label{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0px 15px 40px;
+    font-weight: 80px;
+}
+
+#sect2 label{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 0px 15px 40px;
+    font-weight: 80px;
+}
+#vald{
+    margin: 20px 0px;
+}
+#vald input{
+
+}
+
+input[type="submit"]{
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    background-color:#390bf1;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-left: 500px;
+}
+input[type="submit"]:hover{
+    box-shadow: 0px 0px 8px #0a0619;
+    background-color: #a11ac3;
+}
+
+
+@media screen and (max-width:770px) {
+    header{
+        height: 50px;
+    }
+    h1{
+        font-size: 28px;
+        margin: 20px 0px 0px 0px;
+    }
+    nav li a{
+        font-size: 12px;
+        padding: 10px;
+    }
+    nav li:hover a{
+        padding: 5px 10px 10px 10px;
+    }
+    .G img{
+        width: 35%;
+        height: 200px;
+        display: inline-block;
+    }
+    .H img{
+        width: 70%;
+        height: 200px;
+        margin-left: 30px;
+    }
+    .H{
+        width: 45%;
+        margin: 2px 10px 5px 10px;
+        display: inline-block;
+    }
+    .G img:hover{
+        box-shadow:0px 0px 70px #01182a ;
+        width: 37%;
+        height: 200px;
+    }
+    .H img:hover{
+        box-shadow:none;
+        width:70%;
+        height: 200px;
+    }
+}
+

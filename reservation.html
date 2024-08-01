@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <title>Sites touristiques de la Ville de Bobo-Dioulasso</title>
+        <meta charset:"utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.6">
+        <link rel="stylesheet" href="fiche.css">
+    </head>
+    <body>
+        <header id="head">
+            <img src="logo.jpg" alt="logo de la page web">
+            <h1>La ville de Bobo-Dioulasso</h1>
+        </header>
+        <nav>
+           <div class="table">
+               <ul>
+                   <li class="MA">
+                       <a href="index.html">Accueil</a>
+                   </li>
+                   <li class="MP">
+                       <a href="ppatrimoines.html">Patrimoine</a>
+                   </li>
+                   <li class="MR">
+                        <a href="reservations.html">Reservation d'hotel</a>
+                   </li>
+                   <li class="MG">
+                         <a href="galerie.html">Galerie</a>
+                   </li>
+               </ul>
+           </div>
+        </nav>
+
+        <form method="post" action="traitement.php">
+                <fieldset id="sect1">
+                   <legend>Informations Personnelles:</legend>
+                   <label for="nom">Nom</label>
+                   <input type="text" name="nom" id="nom" required="required" maxlength="25">
+                   <span id="nom_manquant"></span><br> 
+                   <label for="prenom">Prenom(s)</label>
+                   <input type="text" name="prenom" id="prenom" required="required" maxlength="25">
+                   <span id="prenom_manquant"></span><br>
+                   <label for="phone">Telephone</label>
+                   <input type="tel" name="phone" id="phone" required="required" maxlength="30"><br>
+                   <label for="mail">Email</label>
+                   <input type="email" name="mail" id="mail" required="required"><br>
+                </fieldset>
+                <fieldset id="sect2">
+                    <legend>Informations Supplementaires:</legend>
+                    <label for="nombre">Nombre de personnes</label>
+                    <input type="number" name="nombre de persoones" id="nombre"  required="required"><br>
+                    <label for="type">Type de chambre</label>
+                    <select id="type" name="chambre" class="type" required="required">
+                        <option id="type" value="chambre standard(1 a 2 personnes)">chambre standard(1 a 2 personnes)</option>
+                        <option id="type" value="chambre familiale(1 a 4 personnes)">chambre familiale(1 a 4 personnes)</option>
+                        <option id="type" value="suite">suite</option>
+                        <option id="type" value="dortoir mixte(6 personnes)">dortoir mixte(6 persoones)</option>
+                        <option id="type" value="dortoir pour femme(6 personnes)">dortoir pour femme(6 personnes)</option>
+                        <option id="type" value="dortoir pour hommes(6 personnes)">dortoir pour hommes(6 personnes)</option>
+                    </select><br>
+                    <label for="date">Date d'arriver</label>
+                    <input type="date" name="date" id="date" required="required"><br>
+                    <label for="heure">Heure d'arriver</label>
+                    <input type="time" name="heure" id="heure" required="required"><br>
+                   
+                    <label for="nombre de nuit">Nombre de nuits</label>
+                    <input type="number" name="nombre de nuit" id="nombre de nuit"><br>
+                    <label for="adulte">Nombre d'Adultes</label>
+                    <input type="number" name="nombre adulte" id="adulte" required="required"><br>
+                    <label for="enfant">Nombre d'Enfant</label>
+                    <input type="number" name="nombre enfant" id="enfant" required="required"><br>
+                    <label for="depart">Date de Depart</label>
+                    <input type="date" name="depart" id="depart"><br>
+                </fieldset>
+
+                <label for="message">Message</label><br>
+                <textarea id="message"></textarea>
+                <div id="vald">
+                    <input type="submit" value="envoyer" id="bouton_envoi">
+                </div>
+        </form>
+
+        <script>
+            var validation = document.getElementById('bouton_envoi');
+            var nom = document.getElementById('nom');
+            var nom_m = document.getElementById('nom_manquant');
+            var nom_v = /^[a-zA-Zéèà][a-zéèà]+/;
+            var prenom = document.getElementById("prenom");
+            var prenom_m = document.getElementById("prenom_manquant");
+            var prenom_v = /^[a-zA-Zéèà][a-zéèà]+([-'\s][a-zA-Zéèà][a-zéèà]+)?/;
+            validation.addEventListener('click', n_valid);
+            validation.addEventListener('click', p_valid);
+
+
+            function n_valid(e){
+                 if (nom.validity.valueMissing) {
+                      e.preventDefault();
+                      nom_m.textContent = 'nom manquant';
+                      nom_m.style.color = 'red';
+                }else if (nom_v.test(nom.value) == false) {
+                    event.preventDefault();
+                    nom_m.textContent = 'format incorrect';
+                    nom_m.style.color = "orange";
+                }else{
+
+                }
+            }
+
+            function p_valid(e){
+                 if (prenom.validity.valueMissing) {
+                      e.preventDefault();
+                      prenom_m.textContent = 'prenom manquant';
+                      prenom_m.style.color = 'red';
+                }else if (nom_v.test(prenom.value) == false) {
+                    event.preventDefault();
+                    prenom_m.textContent = 'format incorrect';
+                    prenom_m.style.color = "orange";
+                }else{
+
+                }
+            }
+
+         </script>
+
+        <footer>
+            Toute reproduction interdite - NEBIE A. Razak - bobo-dioulasso-juill 2024
+        </footer>
+    </body>
+</html>

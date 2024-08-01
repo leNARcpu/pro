@@ -1,0 +1,49 @@
+body{
+    font-family: 'century gothic', calibri, serif;
+    font-size: 13px;
+    margin: 0px;
+    padding: 0px;
+    background-color:Rgba(232, 70, 170, 0.15);
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(157, 75, 125);
+}
+
+img{
+    margin-left: 300px;
+    width: 60%;
+    border-radius: 20px;
+    height: 500px;
+}
+
+.des{
+    clear: right;
+    position: relative;
+}
+
+h2{
+    font-size: 30px;
+    margin-left: 75px;
+}
+
+img:hover{
+    box-shadow: 0px 0px 5px #090546df;
+}
+
+@media screen and (max-width:780px) {
+    h1{
+        font-size: 40px;
+        width: 100%;
+        font-weight: bold;
+        text-align: center;
+    }
+    img{
+        width: 60%;
+        height: 300px;
+        margin-left: 100px;
+    }
+}
